@@ -30,7 +30,7 @@ public class Letters extends Universe
     int LetterPrice[] = {1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10};
      char LettersList[] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
      char letter ;
-     char letter1;
+    // char letter1;
    int startx=0;
    int starty=0;
    int r=0;
@@ -63,6 +63,7 @@ public class Letters extends Universe
             if (places[this.getX()][this.getY()]==0)
             {
                 places[this.getX()][this.getY()] = this.letter;
+                System.out.println("Falg 100");
             }
             else
             {

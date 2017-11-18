@@ -9,7 +9,7 @@ import javax.swing.*;
 
 public class MyWorld extends World
 {
-    public static MyWorld self;
+  //  public static MyWorld self;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -18,7 +18,7 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(20, 15, 32);
-        self = this;
+ //       self = this;
 
         prepare();
     }
@@ -43,25 +43,25 @@ public class MyWorld extends World
         buttonrefuse.setLocation(17,1);
         buttonplay.setLocation(17,5);
         Letters letters0 = new Letters();
-        addObject(letters0,15,8);
+        this.addObject(letters0,15,8);
         Letters letters2 = new Letters();
-        addObject(letters2,15,9);
+        this.addObject(letters2,15,9);
         Letters letters3 = new Letters();
-        addObject(letters3,15,10);
+        this.addObject(letters3,15,10);
         Letters letters4 = new Letters();
-        addObject(letters4,17,9);
+        this.addObject(letters4,17,9);
         Letters letters5 = new Letters();
-        addObject(letters5,19,8);
+        this.addObject(letters5,19,8);
         Letters letters6 = new Letters();
-        addObject(letters6,19,9);
+        this.addObject(letters6,19,9);
         Letters letters7 = new Letters();
-        addObject(letters7,19,10);
+        this.addObject(letters7,19,10); 
         
         
     }
     public static void AddLetter (int x , int y)
     {
-        Letters letters7 = new Letters();
-        MyWorld.self.addObject(letters7,19,10);
+        
+       
     }
 }

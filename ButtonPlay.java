@@ -19,9 +19,13 @@ public class ButtonPlay extends Universe
         if (Greenfoot.mouseClicked(this))
         {
         Universe.letters.RefillLetters(7);
-         System.out.println("2");
-         
-          MyWorld.AddLetter(17,10);
+         System.out.println("PlayClicked");
+         Letters letters0 = new Letters();
+          getWorld().addObject(letters0,19,11);
+          
+        
+        
+       //   MyWorld.AddLetter(17,10);
         play = true;
         
         }
