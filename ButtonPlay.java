@@ -43,7 +43,7 @@ public class ButtonPlay extends Universe
             
          System.out.println(getWorld().getObjectsAt(15,8, null).size() ) ;
         
-         if (getWorld().getObjectsAt(15,8, null).size()!=2) 
+        
         
        //   MyWorld.AddLetter(17,10); 
         play = true;
