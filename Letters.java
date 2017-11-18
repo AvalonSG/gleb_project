@@ -28,8 +28,8 @@ public class Letters extends Universe
     int y[] = new int[7];
     int x[] = new int[7];
     int LetterPrice[] = {1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10};
-    char LettersList[] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
-    char letter ;
+     char LettersList[] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+     char letter ;
      char letter1;
    int startx=0;
    int starty=0;
@@ -397,14 +397,10 @@ public class Letters extends Universe
  public Letters() 
  {
    colors();
-     read();
- 
+   read();
+   RefillLetters(7);
      
-     for (int i = 0;i<7;i++)
-     {
-      letter = LettersList[Greenfoot.getRandomNumber(25)] ;
-      setImage( letter+".jpg");
-        }
+
      for (int i =0;i<=14;i++)
             {
              for (int j =0;j<=14;j++) 
@@ -430,7 +426,14 @@ public class Letters extends Universe
     }
 
  }
-   
+   public void RefillLetters (int c)
+   {
+            for (int i = 0;i<c;i++)
+     {
+      letter = LettersList[Greenfoot.getRandomNumber(25)] ;
+      setImage( letter+".jpg");
+        }
+    }
     public void colors()
     {
     colors[0][0]=1;

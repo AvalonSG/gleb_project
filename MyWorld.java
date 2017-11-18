@@ -9,7 +9,7 @@ import javax.swing.*;
 
 public class MyWorld extends World
 {
-
+    public static MyWorld self;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -18,7 +18,7 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(20, 15, 32);
-      
+        self = this;
 
         prepare();
     }
@@ -56,5 +56,12 @@ public class MyWorld extends World
         addObject(letters6,19,9);
         Letters letters7 = new Letters();
         addObject(letters7,19,10);
+        
+        
+    }
+    public static void AddLetter (int x , int y)
+    {
+        Letters letters7 = new Letters();
+        MyWorld.self.addObject(letters7,19,10);
     }
 }

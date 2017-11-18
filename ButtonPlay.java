@@ -14,10 +14,16 @@ public class ButtonPlay extends Universe
      */
     public void act() 
     {
+  
         play = false;
         if (Greenfoot.mouseClicked(this))
         {
+        Universe.letters.RefillLetters(7);
+         System.out.println("2");
+         
+          MyWorld.AddLetter(17,10);
         play = true;
+        
         }
     }    
 }

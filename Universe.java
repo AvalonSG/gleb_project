@@ -13,6 +13,7 @@ public class Universe extends Actor
     public static boolean play = false;
     public static boolean back = false;
     public static int score = 0 ; 
+    public static Letters letters = new Letters();
     /**
      * Act - do whatever the Universe wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
