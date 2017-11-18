@@ -454,7 +454,7 @@ public class Letters extends Universe
     colors[3][0]=4;
     colors[3][3]=3;
     colors[3][7]=4;
-    colors[3][11]=3;
+    colors[3][11]=3; 
     colors[4][4]=3;
     colors[4][10]=3;
     colors[5][1]=2;

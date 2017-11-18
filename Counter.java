@@ -38,14 +38,14 @@ public class Counter extends Actor
     public void act() {
         if(value < target) {
             value++;
-            updateImage();
+            updateImage(); 
         }
         else if(value > target) {
             value--;
             updateImage();
         }
 
-    }
+    } 
  
     public void add(int score)
     {
