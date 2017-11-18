@@ -402,14 +402,14 @@ public class Letters extends Universe
    RefillLetters(7);
      
 
-     for (int i =0;i<=14;i++)
+  /*  for (int i =0;i<=14;i++)
             {
              for (int j =0;j<=14;j++) 
              {
                  places[i][j]=0; 
            
                 }
-            }
+            } */
  
  }
  public void read()
