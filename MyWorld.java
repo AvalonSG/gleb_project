@@ -42,6 +42,9 @@ public class MyWorld extends World
         buttonplay.setLocation(18,5);
         buttonrefuse.setLocation(17,1);
         buttonplay.setLocation(17,5);
+        Counter scoreCounter = new Counter("Score: ");
+        addObject(scoreCounter, 60, 380); 
+
         Letters letters0 = new Letters();
         this.addObject(letters0,15,8);
         Letters letters2 = new Letters();

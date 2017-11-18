@@ -14,7 +14,7 @@ public class Universe extends Actor
     public static boolean back = false;
     public static int score = 0 ; 
     public static Letters letters = new Letters();
-    
+    public static int Gscore = 0 ; 
 
     
     /**

@@ -9,7 +9,7 @@ import java.lang.Exception;
 import java.io.IOException ;
 
 
-
+ 
 
 
 /**
@@ -376,6 +376,7 @@ public class Letters extends Universe
           
                
                }  
+               Gscore = score ;
                score =0 ;
             }
            
